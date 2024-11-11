@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from "react-router-dom"
-import Logo from "../assets/images/biologo.jpg"
+import Logo from "../assets/images/newlogo-modified.png"
 export default function Header() {
   return (
     <header className='bg-green-800 text-white font-semibold shadow-lg'>
@@ -27,7 +27,7 @@ export default function Header() {
             <li className='hidden xl:inline hover:underline'>Ефект</li>
           </Link>
           <Link to='/method'>
-            <li className='hidden sm:inline hover:underline'> Метод</li>
+            <li className='hidden sm:inline hover:underline'> Метод на прилагане</li>
           </Link>
           <Link to='/contacts'>
             <li className='hidden lg:inline hover:underline'> Контакти </li>
