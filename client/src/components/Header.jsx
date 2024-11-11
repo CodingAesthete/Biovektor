@@ -4,14 +4,14 @@ import { Link } from "react-router-dom"
 import Logo from "../assets/images/biologo.jpg"
 export default function Header() {
   return (
-    <header className='bg-blue-200 text-black font-semibold shadow-lg'>
+    <header className='bg-green-800 text-white font-semibold shadow-lg'>
       <div className='flex justify-between items-center p-2 lg:gap-4 sm:mx-10'>
         <Link to='/'>
           <div className='flex items-center gap-2 sm:gap-6'>
             <div className='w-8 sm:w-14'>
               <img src={Logo} alt="Logo" className='shadow-lg rounded-full' />
             </div>
-            <div className='text-lg sm:text-3xl text-center font-bold text-black whitespace-nowrap' style={{ letterSpacing: '3px' }}>
+            <div className='text-lg sm:text-3xl text-center font-bold text-white whitespace-nowrap' style={{ letterSpacing: '3px' }}>
               Biovektor
             </div>
           </div>
