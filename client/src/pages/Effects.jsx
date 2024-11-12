@@ -32,15 +32,14 @@ export default function Effects() {
     animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-emerald-50"
+      className="text-lg font-changer:text-xl w-11/12 sm:w-5/6 mx-auto rounded-lg px-4 sm:px-10 py-8 mt-6 header-sm:mt-14 sm:mt-6 mb-10 bg-emerald-50 shadow-lg"
     >
-      <h1 className="text-[1.7rem] font-bold mb-6 text-center text-red-800 bg-gradient-to-r from-emerald-600 to-emerald-400 
-              text-transparent bg-clip-text drop-shadow-xl">
+      <h1 className="text-[1.7rem] font-bold mb-6 text-center text-red-800 drop-shadow-xl">
         {t('compositionTitle')}
       </h1>
 
-      <div className="flex items-center mb-4">
-        <p className="w-3/5 mr-6">
+      <div className="flex flex-col medium2:flex-row items-center mb-4">
+        <p  style={{ lineHeight: '2.33' }} className="medium2:w-3/5 mr-6 mb-2">
           • {t('combr1')}
           <br />
           • {t('combr2')}
@@ -54,16 +53,16 @@ export default function Effects() {
         <img
           src={Effect}
           alt="Effect illustration"
-          className="w-2/5 rounded-lg shadow-md"
+          className="medium2:w-2/5 mb-3 rounded-lg shadow-md"
         />
       </div>
 
-      <p>
+      <p className="mb-3">
          {t('comP')}
       </p>
 
-      <div className="flex items-center mb-4">
-        <ul className="w-3/5 list-disc pl-6 space-y-2">
+      <div className="flex flex-col medium2:flex-row medium2:items-center mb-4">
+        <ul className="medium2:w-3/5 list-disc pl-6 space-y-2 mb-2">
           <li>{t('comli1')}</li>
           <li>{t('comli2')}</li>
           <li>{t('comli3')}</li>
@@ -75,7 +74,7 @@ export default function Effects() {
         <img
           src={Effect2}
           alt="Effect illustration 2"
-          className="w-2/5 rounded-lg shadow-md"
+          className="medium2:w-2/5 rounded-lg shadow-md"
         />
       </div>
 
@@ -90,7 +89,7 @@ export default function Effects() {
         <img
           src={Effect4}
           alt="Effect illustration 3"
-          className="w-10/12 shadow-md"
+          className="w-full medium2:w-10/12 shadow-md"
         />
       </div>
     </motion.div>
