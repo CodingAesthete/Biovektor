@@ -35,18 +35,18 @@ export default function Effects() {
     animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-emerald-50"
+      className="text-lg font-changer:text-xl w-11/12 sm:w-5/6 mx-auto rounded-lg px-4 sm:px-10 py-8 mt-6 header-sm:mt-14 sm:mt-6 mb-10 bg-emerald-50 shadow-lg"
     >
      <h1 className="text-[1.7rem] font-bold mb-6 text-center text-red-800 drop-shadow-xl">
       {t('benefitsTitle')}
 </h1>
 
       {/* Flex container for dividing the text into two halves */}
-      <div className="flex flex-col xl:flex-row items-start md:space-x-6">
+      <div className="flex flex-col xl:flex-row items-start md:space-x-2">
 
         {/* Left section */}
-        <div className="flex-1 pr-4">
-          <ul className="list-disc pl-6 space-y-2">
+        <div className="flex-1 pr-4 ">
+          <ul className="list-disc pl-6 space-y-2  leading-relaxed tracking-wide">
             <li>{t('benli1')}</li>
             <li>{t('benli2')}</li>
 
@@ -85,7 +85,7 @@ export default function Effects() {
 
         {/* Right section */}
         <div className="flex-1 pl-4">
-          <ul className="list-disc pl-6 space-y-2">
+          <ul className="list-disc pl-2 md:pl-0 space-y-2">
           <li>{t('benli10')}</li>
           <li>{t('benli11')}</li>
           <div className="mt-4 flex justify-center">

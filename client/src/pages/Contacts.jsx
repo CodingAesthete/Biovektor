@@ -26,7 +26,7 @@ export default function Contacts() {
 
   return (
     <motion.div
-    className="text-lg w-11/12 sm:w-5/6 mx-auto rounded-md px-4 sm:px-10 py-6 mt-6 mb-6 bg-emerald-50 text-center"
+    className="text-lg w-11/12 sm:w-5/6 mx-auto rounded-md px-4 sm:px-10 py-6 mt-6 header-sm:mt-14 sm:mt-6 mb-6 bg-emerald-50 text-center"
     key={isAnimating} 
     initial={{ opacity: 0, scale: 0.95 }}
     animate={{ opacity: 1, scale: 1 }}
