@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
 import Farmer from "../assets/images/farmer.jpg";
 import Farmer2 from "../assets/images/farmer2.jpg";
+import { useTranslation } from 'react-i18next';
 
 export default function Method() {
+  const { i18n, t } = useTranslation();
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const toggleLanguage = () => {
+    const newLanguage = i18n.language === 'bg' ? 'en' : 'bg';
+    i18n.changeLanguage(newLanguage);
+  };
+
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      setIsAnimating(true);
+      setTimeout(() => setIsAnimating(false), 0); // Duration of the animation in milliseconds
+    };
+
+    i18n.on('languageChanged', handleLanguageChange);
+    return () => i18n.off('languageChanged', handleLanguageChange);
+  }, [i18n]);
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+    key={isAnimating} 
+    initial={{ opacity: 0, scale: 0.95 }}
+    animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
       exit={{ opacity: 0 }}
       className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-emerald-50"
     >
       <h1 className="text-[1.7rem] font-bold mb-6 text-center text-red-800 bg-gradient-to-r from-emerald-600 to-emerald-400 
               text-transparent bg-clip-text drop-shadow-xl">
-        Метод на прилагане
+        {t('ApplicationTitle')}
       </h1>
 
       {/* Flexbox container to align images and text */}
@@ -30,13 +51,12 @@ export default function Method() {
         {/* Text content */}
         <div className="flex-1 text-lg text-justify">
           <p className="mb-4">
-            При зърнено-бобови и зеленчукови култури се прилагат 3-4 третирания по 5-7 литра на 1 ха. За кафе, чай, маслини и др.: 4-5 третирания, 8-12 литра на 1 ха. За оранжерии: накисване на семена при прилагане на Fertility Elixir: Разредете 20-30 ml Fertility Elixir на 1 литър вода. Накиснете семената за 12-18 часа. Разход: на 1 кг семена до пълното им покриване с разтвор.
+          {t('AppP1')}</p>
+          <p className="mb-4">
+          {t('AppP2')}
           </p>
           <p className="mb-4">
-            Поливане: Еликсирът се разрежда 20-30 мл на 10 литра вода, поливанията се извършват през 5-7 дни. Пръскане на разсад: след второто поливане, за 5-7 дни и пръскане от третия на всеки 10-15 дни. Брой поливания: 6 до 8 пъти.
-          </p>
-          <p className="mb-4">
-            В резултат на прилагането на Fertility Elixir, разсадът расте два пъти по-бързо от обикновения разсад, когато не е поливан. Производителността се увеличава с 20% - 60%, нитратите и нитритите намаляват с 3 - 6 пъти, подобрява се качеството на продукцията, увеличава се дългосрочното съхранение на плодовете и зеленчуците.
+          {t('AppP3')}
           </p>
         </div>
 
