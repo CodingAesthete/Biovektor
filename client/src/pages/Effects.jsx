@@ -4,6 +4,7 @@ import Effect from "../assets/images/effect1.png";
 import Effect2 from "../assets/images/effect2.png";
 import Effect3 from "../assets/images/effect3.png";
 import Effect4 from "../assets/images/effect6.png";
+import containsBio from '../assets/images/containsBio.png'
 import { useTranslation } from 'react-i18next';
 
 export default function Effects() {
@@ -51,7 +52,7 @@ export default function Effects() {
           • {t('combr5')}
         </p>
         <img
-          src={Effect}
+          src={containsBio}
           alt="Effect illustration"
           className="medium2:w-2/5 mb-3 rounded-lg shadow-md"
         />
