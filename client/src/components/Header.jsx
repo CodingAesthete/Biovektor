@@ -3,7 +3,7 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import Logo from "../assets/images/newlogo-modified.png";
+import Logo from "../assets/images/logo14.png";
 
 const fadeInStyle = {
   animation: 'fadeIn 1s ease-in-out',

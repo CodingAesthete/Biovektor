@@ -65,8 +65,10 @@ i18n
 
           contactsTitle: "Контакти",
           contactsP: "С удоволствие ще отговорим на всички ваши въпроси и запитвания относно нашите услуги и продукти. Независимо дали искате да направите поръчка, да получите допълнителна информация или просто да споделите своите идеи и предложения, ние сме тук, за да ви помогнем.",
-          contactsTel: "+359-88-661-2166 - мениджър",
-          contactsAdd: "Биовектор ЕООД, Варна, Западна промишлена зона, район Весела",
+          contactsTel: "+359-88-661-2166 - Г. Мишков",
+          contactsTel2: "+359-88-881-9651 - А. Мациевский",
+          contactsAdd: "Биовектор ЕООД",
+          contactsAdd2: "Варна, Западна промишлена зона, район Весела",
         }
       },
       en: {
@@ -125,8 +127,10 @@ i18n
 
           contactsTitle: "Contacts",
           contactsP: "We are happy to answer all your questions and inquiries about our services and products. Whether you want to place an order, receive more information, or simply share your ideas and suggestions, we are here to help.",
-          contactsTel: "+359-88-661-2166 - Manager",
-          contactsAdd: "Biovector Ltd., Varna, Western Industrial Zone, Vesela District",
+          contactsTel: "+359-88-661-2166 - G. Mishkov",
+          contactsTel2: "+359-88-881-9651 - O. Matsiievski",
+          contactsAdd: "Biovector Ltd.",
+          contactsAdd2: " Varna, Western Industrial Zone, Vesela District",
 
         }
       }

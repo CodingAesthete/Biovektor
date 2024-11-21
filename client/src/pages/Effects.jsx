@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
 import Effect from "../assets/images/effect1.png";
+import Vegetables from "../assets/images/vegetables.jpg";
+import Flowers from "../assets/images/flowerss.jpg";
 import Effect2 from "../assets/images/effect2.png";
 import Effect3 from "../assets/images/effect3.png";
 import Effect4 from "../assets/images/effect6.png";
@@ -52,7 +54,7 @@ export default function Effects() {
           • {t('combr5')}
         </p>
         <img
-          src={containsBio}
+          src={Flowers}
           alt="Effect illustration"
           className="medium2:w-2/5 mb-3 rounded-lg shadow-md"
         />
@@ -73,7 +75,7 @@ export default function Effects() {
           <li>{t('comli7')}</li>
         </ul>
         <img
-          src={Effect2}
+          src={Vegetables}
           alt="Effect illustration 2"
           className="medium2:w-2/5 rounded-lg shadow-md"
         />
