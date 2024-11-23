@@ -69,6 +69,7 @@ i18n
           contactsTel2: "+359-88-881-9651 - А. Мациевский",
           contactsAdd: "Биовектор ЕООД",
           contactsAdd2: "Варна, Западна промишлена зона, район Весела",
+          Results: "Резултати от употреба",
         }
       },
       en: {
@@ -131,6 +132,7 @@ i18n
           contactsTel2: "+359-88-881-9651 - O. Matsiievski",
           contactsAdd: "Biovector Ltd.",
           contactsAdd2: " Varna, Western Industrial Zone, Vesela District",
+          Results: "Results of usage",
 
         }
       }

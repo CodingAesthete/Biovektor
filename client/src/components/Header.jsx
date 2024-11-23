@@ -37,11 +37,11 @@ export default function Header() {
       <header className="bg-green-800 text-white font-semibold shadow-lg fixed top-0 left-0 right-0 z-50">
         <div className="flex flex-col lg:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-36">
           <Link to="/">
-            <div className="flex items-center gap-2 sm:gap-6">
+            <div className="flex items-center gap-0 sm:gap-1 my-1">
               <div className="my-1 w-14 sm:w-14 md:w-16 xl:w-16">
-                <img src={Logo} alt="Logo" className="shadow-lg rounded-full" />
+                <img src={Logo} alt="Logo" className="shadow-lg rounded-full w-10 md:w-12" />
               </div>
-              <div className="text-2xl sm:text-3xl text-center font-bold text-white whitespace-nowrap" style={{ letterSpacing: '3px' }}>
+              <div className="text-3xl sm:text-3xl text-center font-bold text-white whitespace-nowrap" style={{ letterSpacing: '3px' }}>
                 Biovektor
               </div>
             </div>
